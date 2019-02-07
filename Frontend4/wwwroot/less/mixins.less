@@ -1,0 +1,114 @@
+// Mixins
+
+// Bootstrap Button Variant
+
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+ {
+    color: @color;
+    background-color: lighten(@background, 10%);
+        border-color: lighten(@border, 10%);
+  }
+   
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 10%);
+        border-color: darken(@border, 10%);
+  }
+  
+  
+  
+  
+  
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+// Background Cover Mixin
+
+.background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+// Custom fonts
+@font-face {
+    font-family: Intro;
+    src: url(../fonts/Intro.otf);
+}
+
+@font-face {
+    font-family: JOURNALISM;
+    src: url(../fonts/journalism2.ttf);
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url(../fonts/notosans.ttf);
+}
+
+@font-face {
+    font-family: "Noto Sans - Condensed Medium";
+    src: url(../fonts/Notosansdisplaycondensedmedium.ttf);
+}
+
+
+// Font Mixins
+
+.body-font() {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.menu-font() {
+	//font-family: 'PT Sans Caption', Tahoma, sans-serif;
+}
+
+.heading-font() {
+    font-family: JOURNALISM;
+    text-transform: uppercase;
+}
+
+
+
+
+/*
+.serif-font() {
+	font-family: 'Lato', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.h1-font() {
+	font-family: 'PT Sans Caption', sans-serif;
+	text-transform: uppercase;
+}
+
+*/

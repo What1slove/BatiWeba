@@ -1,94 +1,925 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ru" class="loading">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="header-content">
-                <a href="/"><img src="/img/web-logo.png" /></a>
-            </div>
-        </header>
-        <div class="content">
-            <div class="col-left">
-                <ul>
-                    <a href="#"><li>Влад лох</li></a>
-                    <a href="#"><li>Скандалы, интриги, расследования</li></a>
-                    <a href="#"><li>Сплетни и слухи</li></a>
-                    <a href="#"><li>Враги</li></a>
-                    <a href="#"><li>Картинная галерея</li></a>
-                </ul>
-            </div>
-            <div class="col-center">
-                <div class="box">
-                    <div class="box-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fermentum cursus augue, a eleifend felis bibendum in. Sed et eleifend nisl. Donec fringilla euismod dictum. Pellentesque pellentesque a neque sed cursus. Morbi efficitur sagittis sapien et dapibus. Cras vestibulum mi eget nunc suscipit, mollis lobortis lectus molestie. Donec at ornare arcu. Cras vel metus interdum, porttitor diam ac, eleifend dolor. Sed et pellentesque turpis. Suspendisse ut velit purus. Aliquam vitae viverra sapien. Sed pulvinar ante nunc, tincidunt vehicula ante aliquam auctor. Morbi tincidunt mattis lorem, finibus tincidunt nisl interdum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst.
-                        </p>
-                    </div>
-                    <div>
-                        <hr />
-                        <div class="box-footer">
-                            <p class="like">Ставь лоес</p>
-                            <p class="comments">Комментарии</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/img/web-cat.png">
-                    <div>
-                        <hr />
-                        <div class="box-footer">
-                            <p class="like">Ставь лоес</p>
-                            <p class="comments">Комментарии</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-content">
-                        <h2>Тоже заголовок</h2>
-                        <hr />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fermentum cursus augue, a eleifend felis bibendum in. Sed et eleifend nisl. Donec fringilla euismod dictum. Pellentesque pellentesque a neque sed cursus. Morbi efficitur sagittis sapien et dapibus. Cras vestibulum mi eget nunc suscipit, mollis lobortis lectus molestie. Donec at ornare arcu. Cras vel metus interdum, porttitor diam ac, eleifend dolor. Sed et pellentesque turpis. Suspendisse ut velit purus. Aliquam vitae viverra sapien. Sed pulvinar ante nunc, tincidunt vehicula ante aliquam auctor. Morbi tincidunt mattis lorem, finibus tincidunt nisl interdum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst.
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+    <title>Территория меха - Меховая ярмарка в Томске</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <link rel="icon" href="img/favicon.png" sizes="32x32" />
+    <link rel="icon" href="img/favicon.png" sizes="192x192" />
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./vendor/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
+</head>
+<body data-spy="scroll">
+    <section id="sticky-head">
+        <div class="header-top">
+            <div class="container d-flex justify-content-between">
+
+                <div class="header-item">
+                    <p>
+                        <b>
+                            ТЦ «1000 Мелочей»
+                            <span>г. Томск, ул. Ленина, д. 111</span>
+                        </b>
+                    </p>
+                </div>
+                <div class="header-item">
+                    <p>
+                        Работаем <b>ЕЖЕДНЕВНО <span class="time-block">с 10:00-20:00</span></b>
+                    </p>
+                </div>
+                <div class="header-item right-part">
+                    <span class="inst-icon"></span>
+                    <p>
+                        <a href="#">Наш Instagram</a>
+                    </p>
+                    <span class="tel-icon"></span>
+                    <p>
+                        8 (800) 201-18-08
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <nav id="mainNav" class="navbar navbar-expand-sm navbar-light navbar-fixed-top">
+            <div class="container">
+                <a class="page-scroll" href="#header-main"><img src="img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#collection">Коллекция 2018-2019</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#range">Ассортимент</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#condition">Условия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#advantages">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fur">О мехе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#discounts">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#map">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="header-main">
+
+        <div class="section-main">
+            <div class="container">
+                <img src="img/head-liliya.png" class="head-liliya">
+                <img src="img/head-kate.png" class="head-kate">
+                <div class="headline-block hb-inner text-right">
+                    <p>Приди и почувствуй себя неотразимой!</p>
+                    <h2>меховая ярмарка</h2>
+                    <h2><span>в томске</span></h2>
+                    <hr />
+                </div>
+                <div class="info-block ib-inner">
+                    <div class="text-center">
+                        <p>29 дней</p>
+                        <p class="sub-p">до конца ярмарки</p>
+                        <hr />
+                    </div>
+                    <p>
+                        14:40:<span>56</span>
+                    </p>
+                </div>
+            </div>
+            <div class="headline-block hb-outer">
+                <hr />
+            </div>
+            <div class="info-block ib-outer">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="collection">
+        <div class="text-center section-heading">
+            <h2>
+                коллекция <span>2018-2019</span>
+            </h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <div class="row auto-clear">
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-1.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#exampleModalLong" data-toggle="modal" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-2.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-1.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-2.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-1.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-2.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-1.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="img/collection-bg-2.png" class="img-fluid">
+                        <div class="collection-sl slider">
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/collection-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <h6>
+                            126 000 руб.
+                        </h6>
+                        <a href="#" class="btn btn-coll hover-template">
+                            Условия покупки
+                        </a>
+                        <div class="charact">
+                            <div class="charact-head hover-template">
+                                <span class="charact-icon"></span>
+                                <p><span>Характеристики</span></p>
+                            </div>
+                            <div class="charact-main">
+                                <p><span>Мех:</span> каракуль, норка</p>
+                                <p><span>Длина:</span> 110 см</p>
+                                <p><span>Размер:</span> 38-46</p>
+                                <p><span>Модель:</span> ТД 453/100</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <a id="collectionload" href="#" class="btn btn-calc">
+                    Показать ещё
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="range">
+        <div class="text-center section-heading">
+            <h2>
+                ассортимент меха
+            </h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <div class="row auto-clear">
+                    <div class="col-12 col-sm-6 text-right">
+                        <div class="range-item">
+                            <h6>
+                                Соболь
+                            </h6>
+                            <p>
+                                Соболь признан «королем» меха.
+                                Относится к самым ценным видам
+                                пушных полуфабрикатов. В виду
+                                того, что шкурки соболя стоят
+                                дорого, их чаще используют на
+                                отделку изделий — воротник, капюшон, манжеты и т.п
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                        <img src="img/range-1.png">
+                    </div>
+                    <div class="col-12 col-sm-6 text-right">
+                        <div class="range-item">
+                            <h6>
+                                Лисица
+                            </h6>
+                            <p>
+                                Исключительное качество ворса лисьей
+                                шкурки определяет упругость и блеск меха.
+                                Кроме того, что лисий мех славится отличным
+                                качеством и долговечностью, он также имеет
+                                ровный и одинаковый по своей длине ворс,
+                                за счет чего ...<br /> изделие смотрится довольно
+                                объемным и плотным.
+
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                        <img src="img/range-2.png">
+                    </div>
+                    <div class="col-12 col-sm-6 text-right">
+                        <div class="range-item">
+                            <h6>
+                                Керли
+                            </h6>
+                            <p>
+                                Сырье для кёрли добывают в единственном
+                                месте на планете - в Южной Монголии,
+                                где выращивают овец редкой породы Калган.
+                                Но шкура взрослой овцы не подходит для
+                                производства кёрли, только шкуры молодых ягнят...
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                        <img src="img/range-3.png">
+                    </div>
+                    <div class="col-12 col-sm-6 text-right">
+                        <div class="range-item">
+                            <h6>
+                                Каракуль
+                            </h6>
+                            <p>
+                                Каракуль — это шкурки новорождённых
+                                ягнят – не старше трёх дней. Натуральный
+                                цвет каракуля – чёрный, серый, бывает
+                                серебристый и золотистый и очень редко –
+                                белый. Ценность чёрного каракуля определяет красота...
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                        <img src="img/range-4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-calc">
+                    Показать ещё
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="condition">
+        <div class="text-center section-heading">
+            <h2>
+                условия работы
+            </h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <div class="row auto-clear">
+                    <div class="text-center col-6 col-sm-4 col-md-4">
+                        <img src="img/condition-1.png" class="img-fluid">
+                        <p>Более 2000 товаров в <span>ассортименте</span></p>
+                    </div>
+                    <div class="text-center col-6 col-sm-4 col-md-4">
+                        <img src="img/condition-2.png" class="img-fluid">
+                        <p>
+                            Гибкая система
+                            <span>скидок</span>
                         </p>
                     </div>
-                    <div>
-                        <hr />
-                        <div class="box-footer">
-                            <p class="like">Ставь лоес</p>
-                            <p class="comments">Комментарии</p>
+                    <div class="text-center col-6 col-sm-4 col-md-4">
+                        <img src="img/condition-3.png" class="img-fluid">
+                        <p>
+                            Рассрочка
+                            <span>0/0/24</span>
+                        </p>
+                    </div>
+                    <div class="text-center col-6 col-sm-4 col-md-4">
+                        <img src="img/condition-4.png" class="img-fluid">
+                        <p>Гарантия на всю  <span>продукцию – 1 сезоне</span></p>
+                    </div>
+                    <div class="text-center col-6 col-sm-4 col-md-4">
+                        <img src="img/condition--5.png" class="img-fluid">
+                        <p>
+                            Возврат в течение
+                            <span>14 дней</span>
+                        </p>
+                    </div>
+                    <div class="text-center col-6 col-sm-4 col-md-4">
+                        <img src="img/condition-6.png" class="img-fluid">
+                        <p>
+                            Участвуй в розыгрышах
+                            <span>в <a href="#">Instagram</a> и получай подарки</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="text-center section-heading">
+            <h2>О компании</h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+
+                <div class="row auto-clear">
+                    <div class="about-item col-12 col-md-6">
+                        <a><img src="img/about-1.png" class="img-fluid"></a>
+                        <div class="about-desc">
+                            <h6>О ярмарке</h6>
+                            <p class="text-muted ">
+                                «Территория меха» – ярмарка меховых изделий.
+                                Мы работаем в таких городах, как: Санкт-Петербург,
+                                Челябинск, Томск, Алматы, предлагая качественн меховые
+                                изделия напрямую от производителя – Лермонтовского мехового комбината.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-item col-12 col-md-6">
+                        <a><img src="img/about-2.png" class="img-fluid"></a>
+                        <div class="about-desc">
+                            <h6>О меховом комбинате</h6>
+                            <p class="text-muted">
+                                Лермонтовский меховой комбинат –
+                                пятигорская фабрика по пошиву меховых изделий: шуб, дубленок,
+                                курток, жилеток, головных уборов и многого другого.
+                                Это изготовитель и поставщик качественных изделий из меха
+                                с историей в 25 лет. Фабрика оснащена дорогим современным
+                                оборудованием из Германии, Италии, Испании и Турции.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-item col-12 col-md-6">
+                        <a><img src="img/about-3.png" class="img-fluid"></a>
+                        <div class="about-desc">
+                            <h6>Участие в выставках</h6>
+                            <p class="text-muted">
+                                Наше производство - это полный цикл операций от обработки меха
+                                до пошива и контроля качества готовых шуб. На каждом этапе
+                                производства работает современное оборудование и опытные специалисты,
+                                некоторые из которых посвятили работе с мехом всю жизнь.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-item col-12 col-md-6">
+                        <a><img src="img/about-4.png" class="img-fluid"></a>
+                        <div class="about-desc">
+                            <h6>Ценовая политика и качество изделий</h6>
+                            <p class="text-muted">
+                                Для пошива шикарных шуб мы используем
+                                только лучшее сырье, которое закупаем на международных аукционах и
+                                напрямую со зверохозяйств. Это позволяет избежать нам услуг посредников
+                                и, следовательно, удорожания и снижения качества готовых шуб.
+                                Мы придерживаемся такой политики продаж, чтобы вы получили удовольствие от покупки.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-right">
-                <div class="box">
-                    <p>
-                        Исключительно важная информация с этого боку.
-                    </p>
-                    <p>
-                        Такое количество важной информации, что просто ломится всё от неё.
-                    </p>
+        </div>
+
+    </section>
+    <section id="prodaction">
+        <div class="text-center section-heading">
+            <h2>Видео о производстве</h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <iframe height="635" src="http://www.youtube.com/embed/kYEZCylOLBg" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    Наше производство - это полный цикл
+                    операций от обработки меха до пошива
+                    и контроля качества готовых шуб.
+                    На каждом этапе производства работает
+                    современное оборудование и опытные специалисты,
+                    некоторые из которых посвятили
+                    работе с мехом всю жизнь.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="advantages">
+        <div class="text-center section-heading">
+            <h2>Преимущества</h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <div class="row auto-clear">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-1.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>Цены фабрики-производителя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-2.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Высокое качество меха
+                                    <span>с европейских аукционов</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-3.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Система контроля качества
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-4.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Находимся в центре города - в здании магазина “1000 мелочей”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-5.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Регулярно проводим акции
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-6.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Активно ведем Instagram
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-7.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Широкий размерный ряд:
+                                    <span>от 38 - до 70</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-8.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Более 2000 моделей в наличии
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="adv-item">
+                            <a><img src="img/adv-9.png" class="img-fluid"></a>
+                            <div class="adv-desc">
+                                <p>
+                                    Модели по итальянским лекалам
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <h3>Ух ты, заголовок</h3>
-                    <p>
-                        Самое прикольное в этом блоке то, что он катается , когда скролишь страницу. Вот это прикол.
-                    </p>
+            </div>
+        </div>
+    </section>
+    <section id="fur">
+        <div class="text-center section-heading">
+            <h2>о мехе</h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <div class="row auto-clear">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="text-center">
+                            <h6>
+                                Меховые аукционы
+                            </h6>
+                        </div>
+                        <div class="auction-sl slider">
+                            <div>
+                                <img src="img/fur-auction-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/fur-auction-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/fur-auction-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <p>
+                            Мы закупаем мех на меховых аукционах, таких как: <br />
+                            - Kopenhagen Fur (Дания),<br />
+                            - Saga Furs (Финляндия),<br />
+                            - СОЮЗПУШНИНА (Россия).
+                            <br />
+                            <br />
+                            Это гарантирует высокое качество меха и
+                            невысокую цену на готовое изделие.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="text-center">
+                            <h6>
+                                100% качественный мех
+                            </h6>
+                        </div>
+                        <div class="certif-sl slider">
+                            <div>
+                                <img src="img/fur-certif-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/fur-certif-1.png" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="img/fur-certif-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <p>
+                            Мы шьем шубы только из высококачественного меха.
+                            Весь товар сертифицирован.
+                            Это подтверждают сертификаты с пушных аукционов.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="text-center">
+                            <h6>
+                                Маркировка
+                            </h6>
+                        </div>
+                        <div class="marking-item"><img src="img/fur-1.png" class="img-fluid"></div>
+                        <p>
+                            Каждая шуба проходит индивидуальную маркировку (КиЗ),
+                            которая подтверждает ее подлинность и легальность
+                            происхождения. По QR-коду с КиЗ Вы можете проверить
+                            любую шубу из магазина на сайте <span>
+                                Федеральной налоговой
+                                службы
+                            </span> и узнать всю информацию о её производстве.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="discounts">
+        <div class="text-center section-heading">
+            <h2>акции</h2>
+        </div>
+        <div class="section-main">
+            <div class="container">
+                <div class="dis-sl slider">
+                    <div>
+                        <img src="img/discount-1.png" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="img/discount-1.png" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="img/discount-1.png" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="img/discount-1.png" class="img-fluid">
+                    </div>
+                    <div>
+                        <img src="img/discount-1.png" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="text-center section-heading">
+            <h2>мы на карте</h2>
+        </div>
+        <div class="section-map">
+            <div class="img-col">
+                <a><img src="img/map-1.png" class="img-fluid"></a>
+            </div><div class="map-col">
+                <a><img src="img/map-1.png" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="section-info">
+            <div class="container">
+                <div class="info-col ">
+                    <div>
+                        <span class="time-icon"></span>
+                        <p>
+                            Работаем ЕЖЕДНЕВНО
+                            <span>с 10:00 до 20:00</span>
+                        </p>
+                    </div>
+                    <div>
+                        <span class="place-icon"></span>
+                        <p class="place">
+                            Торговый центр «1000 Мелочей»
+                            <span>(г. Томск, ул. Ленина, д. 111)</span>
+                        </p>
+                    </div>
+                </div><div class="info-col text-right">
+                    <div class="inst">
+                        <span class="inst-icon"></span>
+                        <p>
+                            <a href="#">Наш Instagram</a>
+                        </p>
+                    </div>
+                    <div class="tel">
+                        <p>
+                            <span class="tel-icon"></span>
+                            8 (800) 201-18-08
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container d-flex flex-row justify-content-between">
+            <div>
+                <p><a href="#">Политика конфиденциальности</a></p>
+            </div>
+            <div>
+                <p>Copyright  © Территория меха 2019</p>
+            </div>
+            <div>
+                <p>Сделано в <a href="#">Динамике роста</a></p>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg collection-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="left-col">
+                        <img src="img/modal-1.png" class="img-fluid" />
+                        <p><span>Мех:</span> каракуль, норка</p>
+                        <p><span>Длина:</span> 110 см</p>
+                        <p><span>Размер:</span> 38-46</p>
+                        <p><span>Модель:</span> ТД 453/100</p>
+                        <p>Пальто каракулевое с воротником из куницы,Цвет Валенсия полоса</p>
+                    </div>
+                    <div class="right-col">
+                        <h2>
+                            Условия покупки
+                        </h2>
+                        <p>Мы предоставляем удобные условия для покупки шуб и других меховых изделий.</p>
+                        <h6>Рассрочка:</h6>
+                        <p>
+                            <span>«Умная рассрочка 0/0/24 без % и переплат»</span>
+                            Мы предоставляем Вам возможность рассрочки до 24 месяцев без процентов и переплат. Подробнее об условиях расрочки можно узнать у наших менеджеров.
+                        </p>
+                        <h6>Акции* на данную модель</h6>
+                        <p>
+                            <span>Акция «Пенсионер»</span>
+                            При предъявлении пенсионного удостоверения Вы получаете скидку 10%.
+                        </p>
+                        <p class="sub-p">*Акции действуют до 31 декабря 2018. Акции НЕ суммируются!</p>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-content">
-            <p>
-                Просто длинный белый блок с текстом по центру. А чо нет?
-            </p>
-        </div>
-    </footer>
+
+
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script defer src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="/vendor/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/jqBootstrapValidation.js"></script>
+    <script defer src="js/contact_me.js"></script>
+    <script defer src="js/jquery.magnific-popup.min.js"></script>
+    <script defer src="js/jquery.image-changer.min.js"></script>
 </body>
 </html>

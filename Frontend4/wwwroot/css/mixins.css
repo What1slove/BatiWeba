@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Intro;
+  src: url(../fonts/Intro.otf);
+}
+@font-face {
+  font-family: JOURNALISM;
+  src: url(../fonts/journalism2.ttf);
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../fonts/notosans.ttf);
+}
+@font-face {
+  font-family: "Noto Sans - Condensed Medium";
+  src: url(../fonts/Notosansdisplaycondensedmedium.ttf);
+}

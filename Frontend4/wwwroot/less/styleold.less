@@ -1,0 +1,384 @@
+@import "variables.less";
+@import "mixins.less";
+
+// Global Components
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	.body-font;
+	line-height: 1.6;
+	position:relative;
+}
+
+/* Columns clearfix problem hack */
+@media (min-width: 1200px) {
+  .auto-clear .col-lg-1:nth-child(12n+1) {
+    clear: left;
+  }
+  .auto-clear .col-lg-2:nth-child(6n+1) {
+    clear: left;
+  }
+  .auto-clear .col-lg-3:nth-child(4n+1) {
+    clear: left;
+  }
+  .auto-clear .col-lg-4:nth-child(3n+1) {
+    clear: left;
+  }
+  .auto-clear .col-lg-6:nth-child(odd) {
+    clear: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .auto-clear .col-md-1:nth-child(12n+1) {
+    clear: left;
+  }
+  .auto-clear .col-md-2:nth-child(6n+1) {
+    clear: left;
+  }
+  .auto-clear .col-md-3:nth-child(4n+1) {
+    clear: left;
+  }
+  .auto-clear .col-md-4:nth-child(3n+1) {
+    clear: left;
+  }
+  .auto-clear .col-md-6:nth-child(odd) {
+    clear: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .auto-clear .col-sm-1:nth-child(12n+1) {
+    clear: left;
+  }
+  .auto-clear .col-sm-2:nth-child(6n+1) {
+    clear: left;
+  }
+  .auto-clear .col-sm-3:nth-child(4n+1) {
+    clear: left;
+  }
+  .auto-clear .col-sm-4:nth-child(3n+1) {
+    clear: left;
+  }
+  .auto-clear .col-sm-6:nth-child(odd) {
+    clear: left;
+  }
+}
+@media (max-width: 767px) {
+  .auto-clear .col-xs-1:nth-child(12n+1) {
+    clear: left;
+  }
+  .auto-clear .col-xs-2:nth-child(6n+1) {
+    clear: left;
+  }
+  .auto-clear .col-xs-3:nth-child(4n+1) {
+    clear: left;
+  }
+  .auto-clear .col-xs-4:nth-child(3n+1) {
+    clear: left;
+  }
+  .auto-clear .col-xs-6:nth-child(odd) {
+    clear: left;
+  }
+}
+
+p, li, table {
+	font-size: 16px;
+}
+
+p + ul, p + ol {
+    margin-top: 0px;
+}
+
+p.large {
+	font-size: 18px;
+}
+
+p.huge {
+	font-size: 22px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+	outline: none;
+}
+
+/*/a {
+	color: @theme-href;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+	color: @theme-href-hover;
+}
+/*/
+h1 {
+	.heading-font;
+	font-weight: 400;
+	
+}
+
+h2, h3 {
+	.heading-font;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: 2px;
+	font-size:40px;
+}
+
+h4, h5, h6 {
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+.img-centered {
+	margin: 0 auto;
+}
+
+.btn-primary {
+	.button-variant(white; @theme-yellow; @theme-yellow);
+	.btn-font;
+	font-weight: 700;
+}
+
+.btn-xl {
+	.button-variant(@theme-black; @theme-yellow; @theme-yellow);
+	.btn-font;
+	font-weight: 700;
+	border-radius: 3px;
+	border-width: 2px;
+	font-size: 18px;
+	padding: 15px 40px;
+	margin: 10px;
+	box-shadow: 0px 10px 15px #fee576aa;
+	&:hover,
+ {
+    color: @theme-black;
+	box-shadow: 0px 5px 10px #fee576aa;
+    background-color: lighten(@theme-yellow, 10%);
+        border-color: lighten(@theme-yellow, 10%);
+  }
+   
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @theme-black;
+	box-shadow: 0px 0px 0px #fee576aa;
+    background-color: darken(@theme-yellow, 10%);
+        border-color: darken(@theme-yellow, 10%);
+  }
+	
+	
+	
+	
+	
+}
+
+
+.btn-modal {
+	.button-variant(@theme-black; @theme-yellow; @theme-yellow);
+	.btn-font;
+	font-weight: 700;
+	border-radius: 3px;
+	border-width: 2px;
+	font-size: 18px;
+	margin:0;
+    padding:15px 110px;
+	
+	&:hover,
+ {
+    color: @theme-black;
+	
+    background-color: darken(@theme-yellow, 10%);
+        border-color: darken(@theme-yellow, 10%);
+  }
+   
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @theme-black;
+	
+    background-color: darken(@theme-yellow, 10%);
+        border-color: darken(@theme-yellow, 10%);
+  }
+	
+	
+	
+	
+	
+}
+
+
+.btn-calc {
+	.button-variant(@theme-white; @theme-red; @theme-red);
+	.btn-font;
+	font-weight: 700;
+	border-radius: 3px;
+	border-width: 2px;
+	font-size: 18px;
+	padding: 15px 60px;
+	margin: 0 10px;
+	box-shadow: 0 13px 51px rgba(235, 20, 36, 0.45);
+	&:hover,
+ {
+    color: @theme-black;
+	box-shadow: 0px 5px 10px #FF4540;
+    background-color: darken(@theme-red, 5%);
+        border-color: darken(@theme-red, 5%);
+  }
+   
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @theme-black;
+	box-shadow: 0px 0px 0px #FF4540;
+    background-color: darken(@theme-red, 10%);
+        border-color: darken(@theme-red, 10%);
+  }
+}
+
+.btn-xl:first-of-type {
+	margin-left: 0px;
+}
+
+ul[role=alert] {
+	list-style: none;
+	padding-left: 0;
+	text-align: left;
+}
+
+// Highlight Color Customization
+
+::-moz-selection {
+	text-shadow: none;
+	background: @theme-yellow;
+}
+
+::selection {
+	text-shadow: none;
+	background: @theme-yellow;
+}
+
+img::selection {
+	background: transparent;
+}
+
+img::-moz-selection {
+	background: transparent;
+}
+
+body {
+	webkit-tap-highlight-color: @theme-yellow;
+}
+
+
+.slick-prev-new, .slick-next-new {
+    height: 29px;
+    width: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+	cursor: pointer;
+
+    /* to position the arrows left and right at the bottom of slider */
+    position: absolute;
+    z-index: 10;
+    bottom: 57%;
+}
+
+.slick-prev-new {
+    background-image: url('../img/left.png');
+
+    /* place button left */
+    left: -20px;
+	@media (max-width: 575px) {
+		left:-16px;
+
+	}
+}
+.slick-next-new {
+    background-image: url('../img/right.png');
+
+    /* place button left */
+    right: -20px;
+	@media (max-width: 575px) {
+		right:-16px;
+
+	}
+}
+
+
+
+.slick-prev-new1, .slick-next-new1 {		
+    height: 29px;
+	width: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+	cursor: pointer;
+
+    /* to position the arrows left and right at the bottom of slider */
+    position: absolute;
+    z-index: 10;
+    bottom: 50%;
+}
+
+.slick-prev-new1 {
+    background-image: url('../img/left.png');
+
+    /* place button left */
+    left: -20px;
+	@media (max-width: 575px) {
+		left:-16px;
+
+	}
+}
+.slick-next-new1 {
+    background-image: url('../img/right.png');
+
+    /* place button left */
+    right: -20px;
+	@media (max-width: 575px) {
+		right:-16px;
+
+	}
+}
+
+.affix{
+	background-color: lighten(@theme-gray, 5%) !important;
+}
+
+.phone-call {
+color:white;
+&:hover {
+color:white;
+text-decoration:none;
+}
+}
+	
+	
+.case-item img {
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}	
+
+
+@import "index.less";
