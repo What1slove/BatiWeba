@@ -13,7 +13,7 @@
 	$message = strip_tags(htmlspecialchars($_POST['message']));
 	$params = strip_tags($_POST['params']);
 
-	$to = "commerce@ayva.pro";
+	$to = "hello@dinamika-rosta.ru";
 	$from = "noreply@dinamika-rosta.ru";
 	$subject = "Заявка с сайта ТЛЦ";
 	$body = "Заявка с сайта\n\n" .
